@@ -1,20 +1,19 @@
 export default function main(){
     let style = `
         {
-            height:25dvh;
-            width:100px;
-            animation:test 2s linear 0s infinite alternate;
-        }
-        @keyframes test{
-            0%[top:0px;
-                background:red;
-                width:100px;]
-            100%[top:200px;
-                background:yellow;
-                width:300px;]
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background: var(--colorBlack);
+            height:100dvh;
+            width:100%;
         }`
 
     const main = cE("div", style)
-    main.innerHTML = "bem-vindo"
+
+    const logo = cE("img", `{width: 100%;}`)
+    logo.src = "./imgs/logo.jpg"
+
+    main.appendChild(logo)
     return(main)
 }
