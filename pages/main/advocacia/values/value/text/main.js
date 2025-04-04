@@ -1,4 +1,4 @@
-export default function text(t){
+export default function text(n){
     let style = `
         {
             width:100%;
@@ -11,6 +11,6 @@ export default function text(t){
         }`
 
     const text = cE("div", style)
-    text.innerHTML = t
+    text.innerHTML = n
     return(text)
 }

@@ -11,7 +11,7 @@ export default function value(n, u, t){
             align-items:center;
             justify-content:center;
             width:100%;
-            height:30%;
+            height:48%;
             border-radius:15px;
             overflow:hidden;
             position:relative;
