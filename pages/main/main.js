@@ -1,4 +1,7 @@
 import head from "./head/main.js"
+import advocacia from "./advocacia/main.js"
+import equipe from "./equipe/main.js"
+import casos from "./casos/main.js"
 
 export default function main(){
     let style = `
@@ -6,10 +9,12 @@ export default function main(){
             display:flex;
             flex-direction:column;
             width:100%;
-            height:200dvh;
         }`
 
     const main = cE("div", style)
     main.appendChild(head())
+    main.appendChild(advocacia())
+    main.appendChild(equipe())
+    main.appendChild(casos())
     return(main)
 }

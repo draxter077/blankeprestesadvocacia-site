@@ -1,7 +1,7 @@
 export default function logo(){
     let style = `
         {
-            height:100px;
+            height:75px;
         }`
 
     const logo = cE("img", style)
