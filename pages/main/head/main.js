@@ -15,6 +15,9 @@ export default function head(){
             opacity:1;
             z-index:0;
             transition:opacity var(--transitionTime);
+        }
+        :responsive{
+            flex-direction:column;
         }`
 
     const head = cE("div", style)
