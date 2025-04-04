@@ -13,6 +13,7 @@ export default function advocacia(){
             animation:showUp var(--transitionTime) linear var(--animationDelay1) 1 forwards;
         }
         :responsive{
+            height:fit-content;
             flex-direction:column;
         }`
 

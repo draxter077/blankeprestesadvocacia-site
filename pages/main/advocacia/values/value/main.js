@@ -19,6 +19,10 @@ export default function value(n, u, t){
             background-image:url("${u}");
             background-size:100%;
             box-shadow:0px 0px 5px 0px black;
+        }
+        :responsive{
+            height: 150px;
+            margin: 0px 0px 10px 0px;
         }`
     
     const value = cE("div", style)
