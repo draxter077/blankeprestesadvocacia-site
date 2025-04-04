@@ -2,8 +2,7 @@ export default function casos(){
     let style = `
         {
             width:100%;
-            height:500px;
-            background:purple;
+            height:100dvh;
         }`
 
     const casos = cE("div", style)

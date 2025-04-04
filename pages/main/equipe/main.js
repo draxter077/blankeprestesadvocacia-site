@@ -2,8 +2,7 @@ export default function equipe(){
     let style = `
         {
             width:100%;
-            height:500px;
-            background:yellow;
+            height:100dvh;
         }`
 
     const equipe = cE("div", style)

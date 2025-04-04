@@ -12,9 +12,11 @@ export default function head(){
             background:var(--colorBlack);
             padding:10px 50px;
             width:100%;
-            opacity:1;
-            z-index:0;
+            opacity:0;
+            z-index:1;
+            box-shadow:0px 0px 10px 0px var(--colorBlack);
             transition:opacity var(--transitionTime);
+            animation:showUp var(--transitionTime) linear var(--animationDelay0) 1 forwards;
         }
         :responsive{
             flex-direction:column;

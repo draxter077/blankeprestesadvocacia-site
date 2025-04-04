@@ -85,3 +85,7 @@ body{
     padding: 0px;
     margin: 0px;
 }
+@keyframes showUp{
+	0%{opacity:0}
+	100%{opacity:1}
+}

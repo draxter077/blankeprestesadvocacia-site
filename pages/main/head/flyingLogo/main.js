@@ -11,7 +11,6 @@ export default function flyingLogo(){
             position:fixed;
             top:20px;
             opacity:0;
-            z-index:-1;
             transition:opacity var(--transitionTime);
         }
         :responsive{

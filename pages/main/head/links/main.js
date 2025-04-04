@@ -11,7 +11,7 @@ export default function links(){
 
     const links = cE("div", style)
     
-    let ls = ["Advocacia", "Equipe", "Casos"]
+    let ls = ["Advocacia", "Casos", "Equipe"]
     for(let i = 0; i < ls.length;  i++){links.appendChild(link(ls[i]))}
     
     return(links)
