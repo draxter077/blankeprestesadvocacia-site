@@ -2,7 +2,7 @@ export default function logo(){
     let style = `
         {
             height:100%;
-            padding:5px;
+            padding:10px;
             background:var(--colorBlack);
         }`
 

@@ -7,7 +7,7 @@ export default function flyingLogo(){
             display:flex;
             flex-direction:row;
             align-items:center;
-            height:70px;
+            height:80px;
             position:fixed;
             top:20px;
             opacity:0;
