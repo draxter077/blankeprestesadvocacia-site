@@ -127,7 +127,7 @@ window.construct = function construct(p){
     console.log(window.location.href.split("br/"))
     console.log(window.location.href)
     if(p == undefined){
-        if(atts != ""){
+        if(atts == "teste"){
             const paths = atts.split("/") // paths[0] == null
             root.innerHTML = atts
         }
