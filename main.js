@@ -124,6 +124,8 @@ window.construct = function construct(p){
     root.innerHTML = ""
     const atts = window.location.href.split("br/")[1] // domain/p1/p2/p3...
     console.log(atts)
+    console.log(window.location.href.split("br/"))
+    console.log(window.location.href)
     if(p == undefined){
         if(atts != undefined){
             const paths = atts.split("/") // paths[0] == null
