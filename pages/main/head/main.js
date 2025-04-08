@@ -24,6 +24,7 @@ export default function head(){
 
     const head = cE("div", style)
     head.appendChild(flyingLogo())
+    head.appendChild(links())
     head.appendChild(logo())
     head.appendChild(links())
 

@@ -1,7 +1,8 @@
 import head from "./head/main.js"
 import advocacia from "./advocacia/main.js"
-import equipe from "./equipe/main.js"
-import casos from "./casos/main.js"
+import about from "./about/main.js"
+import midia from "./midia/main.js"
+import foot from "./foot/main.js"
 
 export default function main(){
     let style = `
@@ -15,7 +16,8 @@ export default function main(){
     const main = cE("div", style)
     main.appendChild(head())
     main.appendChild(advocacia())
-    main.appendChild(casos())
-    main.appendChild(equipe())
+    main.appendChild(about())
+    main.appendChild(midia())
+    main.appendChild(foot())
     return(main)
 }

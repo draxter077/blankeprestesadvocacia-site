@@ -123,7 +123,7 @@ window.construct = function construct(p){
     const root = document.getElementById("root")
     root.innerHTML = ""
     const atts = window.location.href.split("br/")[1] // domain/p1/p2/p3...
-    console.log("v1.4.4")
+    console.log(document.title)
     console.log(atts)
     console.log(window.location.href.split("br/"))
     console.log(window.location.href)

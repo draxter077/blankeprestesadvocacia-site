@@ -4,6 +4,7 @@ export default function logo(){
             height:100%;
             padding:10px;
             background:var(--colorBlack);
+            border:1px solid var(--colorWhite);
         }`
 
     const logo = cE("img", style)

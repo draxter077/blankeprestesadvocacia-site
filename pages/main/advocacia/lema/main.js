@@ -1,23 +1,21 @@
 export default function lema(){
     let style = `
         {
+            position:absolute;
+            top:0%;
+            left:0%;
             display:flex;
-            align-items:center;
             justify-content:center;
-            width:40%;
-            height:100%;
-            padding:0px 0px 0px 40px;
-            font-size:40px;
-            font-weight:600;
-            color:var(--colorBlack);
-        }
-        :responsive{
-            width:100%;
-            padding:30px;
-            text-align:center;
+            align-items:center;
+            width:60%;
+            height:calc(100% - 80px);
+            margin:40px;
+            color:var(--colorWhite);
+            font-weight:900;
+            font-size:30px;
         }`
 
     const lema = cE("div", style)
-    lema.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    lema.innerHTML = "O sentido da vida é construir construção com direção.<br>A gestão jurídica não é só resolver pendências. É garantir a coerência e funcionar como um curador da sua demanda: Que protege. Que cuida. Que amplia."
     return(lema)
 }
