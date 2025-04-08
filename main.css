@@ -54,6 +54,7 @@ table {
 	--colorWhite: rgb(255, 255, 255);
 	--colorBlack: rgb(0, 0, 0);
 	--colorBlue: rgb(82, 113, 255);
+	--colorBlueOpacity05: rgb(0, 0, 0, 0.5);
 	--transitionTime: 0.5s;
 	--animationDelay0: 0s;
 	--animationDelay1: 0.5s;
