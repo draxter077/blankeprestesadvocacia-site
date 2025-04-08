@@ -10,6 +10,7 @@ export default function midia(){
             width:100%;
             height:100dvh;
             padding:40px;
+            background:var(--colorWhite);
         }`
 
     const midia = cE("div", style)

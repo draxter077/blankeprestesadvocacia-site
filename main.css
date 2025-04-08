@@ -60,6 +60,9 @@ table {
 	--animationDelay1: 0.5s;
 	--animationDelay2: 1s;
 	--animationDelay3: 1.5s;
+	--innerTitleFontSize: 35px;
+	--innerTextFontSize: 25px;
+	--innerTextResponsiveFontSize: 21px;
 }
 body{
 	box-sizing: border-box;
@@ -74,11 +77,10 @@ body{
 }
 ::-webkit-scrollbar-track{
     background: none;
-	margin: 10px 0px;
+	margin: 0px;
 }
 ::-webkit-scrollbar-thumb{
     background: var(--colorBlack);
-    border-radius: 20px;
 }
 ::-webkit-scrollbar-button{
     height: 10px;

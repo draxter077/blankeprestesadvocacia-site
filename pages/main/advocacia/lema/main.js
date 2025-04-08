@@ -3,13 +3,19 @@ export default function lema(){
         {
             position:absolute;
             top:30%;
-            left:0%;
+            left:-100%;
             padding:40px;
             width:100%;
             color:var(--colorWhite);
             font-size:55px;
             font-weight:400;
             text-shadow: 0px 0px 5px var(--colorBlack);
+            opacity:0;
+            animation:enterLema var(--transitionTime) ease var(--animationDelay1) 1 forwards;
+        }
+        @keyframes enterLema{
+            0%[left:-100%;opacity:0]
+            100%[left:0%;opacity:1]
         }
         :responsive{
             top:50%;

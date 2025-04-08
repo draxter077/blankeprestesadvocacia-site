@@ -20,7 +20,6 @@ export default function advocacia(){
         }`
 
     const advocacia = cE("div", style)
-    advocacia.id = "advocacia"
     advocacia.appendChild(background())
     advocacia.appendChild(lema())
     return(advocacia)

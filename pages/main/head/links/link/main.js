@@ -6,6 +6,10 @@ export default function link(n){
             margin:0px 25px;
             cursor:pointer;
             position:relative;
+            text-wrap:nowrap;
+        }
+        :responsive{
+            margin:0px;
         }
         ::after{
             content:"";

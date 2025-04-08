@@ -19,14 +19,16 @@ export default function head(){
             animation:showUp var(--transitionTime) linear var(--animationDelay0) 1 forwards;
         }
         :responsive{
+            padding:5px;
             flex-direction:column;
         }`
 
     const head = cE("div", style)
+    head.id = "advocacia"
     head.appendChild(flyingLogo())
-    head.appendChild(links())
+    head.appendChild(links(["Advocacia", "Sobre nós", "Contato"]))
     head.appendChild(logo())
-    head.appendChild(links())
+    head.appendChild(links(["Equipe", "Conteúdos", "Cases"]))
 
     window.addEventListener(
         "scroll",
