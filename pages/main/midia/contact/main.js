@@ -8,6 +8,6 @@ export default function contact(){
         }`
 
     const contact = cE("div", style)
-    contact.innerHTML = "(41) 99999099999<br>sergio@blankeprestes.adv.br"
+    contact.innerHTML = "(41) 99999099999"
     return(contact)
 }

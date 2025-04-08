@@ -10,7 +10,7 @@ export default function main(){
             display:flex;
             flex-direction:column;
             width:100%;
-            background:linear-gradient(30deg, var(--colorWhite) 55%, var(--colorBlue) 99%);
+            background:var(--colorBlack);
         }`
 
     const main = cE("div", style)
