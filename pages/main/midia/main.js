@@ -1,4 +1,4 @@
-import data from "./data/main.js"
+import content from "./content/main.js"
 import contact from "./contact/main.js"
 
 export default function midia(){
@@ -9,12 +9,15 @@ export default function midia(){
             justify-content:space-between;
             width:100%;
             height:100dvh;
-            padding:40px;
             background:var(--colorWhite);
+        }
+        :responsive{
+            flex-direction:column;
+            height:fit-content;   
         }`
 
     const midia = cE("div", style)
-    midia.appendChild(data())
+    midia.appendChild(content())
     midia.appendChild(contact())
     return(midia)
 }

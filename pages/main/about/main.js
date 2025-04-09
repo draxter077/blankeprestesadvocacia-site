@@ -9,7 +9,6 @@ export default function about(){
             justify-content:space-between;
             width:100%;
             height:100dvh;
-            background:linear-gradient(180deg, var(--colorBlack) 80%, var(--colorBlue) 95%, var(--colorWhite));
         }
         :responsive{
             height:fit-content;

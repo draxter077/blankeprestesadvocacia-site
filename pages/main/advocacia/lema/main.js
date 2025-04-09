@@ -2,12 +2,12 @@ export default function lema(){
     let style = `
         {
             position:absolute;
-            top:30%;
+            top:20%;
             left:-100%;
             padding:40px;
             width:100%;
             color:var(--colorWhite);
-            font-size:55px;
+            font-size:50px;
             font-weight:400;
             text-shadow: 0px 0px 5px var(--colorBlack);
             opacity:0;
@@ -18,7 +18,7 @@ export default function lema(){
             100%[left:0%;opacity:1]
         }
         :responsive{
-            top:50%;
+            top:30%;
             font-size:25px;
             padding:10px;
         }
@@ -42,9 +42,11 @@ export default function lema(){
         }`
 
     const lema = cE("div", style)
-    lema.innerHTML = `Não é só resolver problemas.<br>
-                        É ser responsável pela sua demanda.<br>
-                        <span>Um responsável que protege.</span>
-                        <span>Que cuida.</span>`
+    lema.innerHTML = `O sentido da vida é construir construção com direção.<br>
+                        A gestão jurídica não é só resolver pendências.<br>
+                        É garantir a coerência e funcionar como um curador da sua demanda:<br>
+                        <span>Que protege.</span>
+                        <span>Que cuida.</span>
+                        <span>Que amplia.</span>`
     return(lema)
 }

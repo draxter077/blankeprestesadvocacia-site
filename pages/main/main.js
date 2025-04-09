@@ -2,7 +2,6 @@ import head from "./head/main.js"
 import advocacia from "./advocacia/main.js"
 import about from "./about/main.js"
 import midia from "./midia/main.js"
-import foot from "./foot/main.js"
 
 export default function main(){
     let style = `
@@ -18,6 +17,5 @@ export default function main(){
     main.appendChild(advocacia())
     main.appendChild(about())
     main.appendChild(midia())
-    main.appendChild(foot())
     return(main)
 }

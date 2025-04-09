@@ -26,9 +26,9 @@ export default function head(){
     const head = cE("div", style)
     head.id = "advocacia"
     head.appendChild(flyingLogo())
-    head.appendChild(links(["Advocacia", "Sobre nós", "Contato"]))
+    head.appendChild(links(["Advocacia", "Sobre nós"]))
     head.appendChild(logo())
-    head.appendChild(links(["Equipe", "Conteúdos", "Cases"]))
+    head.appendChild(links(["Contato", "Conteúdos"]))
 
     window.addEventListener(
         "scroll",

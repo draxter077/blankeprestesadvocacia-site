@@ -15,6 +15,12 @@ export default function box(t){
             padding:20px;
             color:var(--colorWhite);
             font-size:var(--innerTextFontSize);
+            opacity:0;
+            transition:opacity var(--transitionTime);
+        }
+        @keyframes pulse{
+            0%[box-shadow:0px]
+            100%[box-shadow:0px 0px 15px 0px var(--colorBlue)]
         }
         :responsive{
             width:45%;
