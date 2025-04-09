@@ -4,6 +4,10 @@ export default function box(src, url){
             width:30%;
             height:30%;
             cursor:${url == undefined ? "default" : "pointer"};
+            transition:transform var(--transitionTime);
+        }
+        :hover{
+            transform:${url == undefined ? "none" : "scale(1.1)"};
         }
         :responsive{
             width:150px;

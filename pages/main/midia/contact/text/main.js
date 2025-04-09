@@ -7,7 +7,7 @@ export default function text(){
             flex-direction:row;
             justify-content:space-between;
             width:100%;
-            padding:20px;
+            padding:20px 0px;
         }
         :responsive{
             flex-wrap:wrap;
