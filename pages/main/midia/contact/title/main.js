@@ -6,7 +6,7 @@ export default function title(){
             color:var(--colorWhite);
             padding:10px 15px;
             text-align:right;
-            background:var(--colorBlack);
+            border-bottom:1px solid var(--colorWhite);
         }`
 
     const title = cE("div", style)

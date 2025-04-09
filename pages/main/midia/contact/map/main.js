@@ -4,6 +4,7 @@ export default function map(){
             width:100%;
             height:100%;
             border-radius:5px;
+            box-shadow:0px 0px 5px 0px var(--colorWhite);
         }`
         
     const map = cE("iframe", style)

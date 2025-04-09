@@ -9,7 +9,6 @@ export default function midia(){
             justify-content:space-between;
             width:100%;
             height:100dvh;
-            background:var(--colorWhite);
         }
         :responsive{
             flex-direction:column;

@@ -4,6 +4,9 @@ export default function link(src, url){
             width:80px;
             height:80px;
             cursor:pointer;
+            background:var(--colorWhite);
+            border-radius:15px;
+            border:2px solid var(--colorWhite);
             opacity:0;
             transition:opacity var(--transitionTime), transform var(--transitionTime);
         }

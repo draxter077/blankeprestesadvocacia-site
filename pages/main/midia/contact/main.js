@@ -36,7 +36,7 @@ export default function contact(){
                 let ls = contact.children[1].children
                 for(let i = 0; i < ls.length; i++){
                     ls[i].style.opacity = 1
-                    await new Promise(resolve => setTimeout(resolve, 100));
+                    await new Promise(resolve => setTimeout(resolve, 500));
                 }
                 window.removeEventListener("scroll", a)
             }
