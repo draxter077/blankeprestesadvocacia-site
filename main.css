@@ -55,6 +55,7 @@ table {
 	--colorBlack: rgb(0, 0, 0);
 	--colorBlue: rgb(82, 113, 255);
 	--colorBlackOpacity05: rgb(0, 0, 0, 0.5);
+	--colorPHBlue: rgb(56, 182, 255);
 	--transitionTime: 0.5s;
 	--animationDelay0: 0s;
 	--animationDelay1: 0.5s;
@@ -63,6 +64,7 @@ table {
 	--innerTitleFontSize: 35px;
 	--innerTextFontSize: 25px;
 	--innerTextResponsiveFontSize: 21px;
+	--footFontSize: 20px;
 }
 body{
 	box-sizing: border-box;
