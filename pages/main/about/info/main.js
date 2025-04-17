@@ -7,13 +7,13 @@ export default function info(){
             display:flex;
             flex-direction:row;
             width:100%;
-            padding: 80px 40px 40px 40px;
+            padding: 40px 0px 0px 0px;
             opacity:0;
             transition:opacity var(--transitionTime), padding var(--transitionTime);
         }
         :responsive{
             flex-direction:column;
-            padding:10px !important;
+            margin:0px 0px 5px 0px;
         }`
     
     const info = cE("div", style)
@@ -27,7 +27,7 @@ export default function info(){
             let scrollY = window.scrollY;
             if(scrollY > 0.25*viewport){
                 info.style.opacity = 1;
-                info.style.padding = "40px";
+                info.style.padding = "0px";
                 window.removeEventListener("scroll", a)
             }
         }

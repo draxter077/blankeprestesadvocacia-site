@@ -5,7 +5,7 @@ export default function box(t){
             display:flex;
             justify-content:center;
             align-items:center;
-            margin:10px;
+            margin:0px 10px;
             border-radius:15px;
             border:5px solid var(--colorBlue);
             background:var(--colorBlack);

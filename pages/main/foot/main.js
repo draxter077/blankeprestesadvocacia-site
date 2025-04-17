@@ -16,6 +16,10 @@ export default function foot(){
             background:var(--colorPHBlue);
             padding:2px 5px 3px 5px;
             margin:0px 0px 0px 7px;
+            transition:transform var(--transitionTime);
+        }
+        >a:hover{
+            transform:scale(1.1);
         }`
 
     const foot = cE("div", style)

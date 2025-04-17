@@ -1,7 +1,7 @@
 export default function img(s){
     let style = `
         {
-            height:60%;
+            height:100%;
             opacity:0;
             transition:opacity var(--transitionTime);
         }

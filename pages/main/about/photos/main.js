@@ -6,12 +6,11 @@ export default function photos(){
             display:flex;
             flex-direction:row;
             justify-content:space-between;
-            padding:40px;
             width:100%;
-            height:100%;
+            height:50%;
         }
         :responsive{
-            padding:10px;
+            margin:5px 0px;
         }`
 
     const photos = cE("div", style)

@@ -26,7 +26,7 @@ export default function flyingLogo(){
     )
     flyingLogo.addEventListener(
         "mouseout",
-        function a(){flyingLogo.children[1].style.maxWidth = "0%"}
+        function a(){flyingLogo.children[1].style.maxWidth = "0px"}
     )
     window.addEventListener(
         "scroll",

@@ -5,13 +5,13 @@ export default function flyingLinks(){
         {
             height:100%;
             width:fit-content;
-            max-width:0%;
+            max-width:0px;
             background:var(--colorBlack);
             overflow:hidden;
             transition:max-width var(--transitionTime);
         }`
 
     const flyingLinks = cE("div", style)
-    flyingLinks.appendChild(links(["Advocacia", "Sobre nós", "Contato", "Conteúdos"]))
+    flyingLinks.appendChild(links(["Sobre nós", "Conteúdos"]))
     return(flyingLinks)
 }

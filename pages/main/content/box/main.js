@@ -22,7 +22,7 @@ export default function box(url, t, a){
             transform:${url == undefined ? "none" : "scale(1.1)"};
         }
         :responsive{
-            width:45%;
+            width:100%;
             margin:10px 0px;
         }`
 

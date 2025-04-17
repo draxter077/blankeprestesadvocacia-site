@@ -8,16 +8,14 @@ export default function content(){
             justify-content:flex-start;
             flex-wrap:wrap;
             width:100%;
-            margin:50px 0px 0px 0px;
-            height:90%;
-            max-height:100%;
+            padding:0px;
+            height:100dvh;
             opacity:0;
             transition:padding var(--transitionTime), opacity var(--transitionTime);
         }
         :responsive{
             height:fit-content;
             padding:10px !important;
-            margin:0px;
         }`
 
     const content = cE("div", style)

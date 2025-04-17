@@ -3,17 +3,17 @@ export default function contact(){
         {
             text-align:center;
             color:var(--colorWhite);
-            width:100%;
-            padding:30px;
-            opacity:0.8;
+            padding:0px 10px;
+            border-left:1px solid var(--colorBlue);
+            border-right:1px solid var(--colorBlue);
         }
         :responsive{
             font-size:15px;
             padding:10px;
+            margin:5px 0px;
         }`
 
     const contact = cE("div", style)
-    contact.id = "contato"
     contact.innerHTML = "(41) 99204-5758 • secretaria@blankeprestes.adv.br • Rua Atílio Bório, 80 - Curitiba"
     return(contact)
 }
