@@ -14,10 +14,11 @@ export default function head(){
             width:100%;
             opacity:0;
             z-index:1;
-            box-shadow:0px 0px 10px 0px var(--colorBlack);
+            box-shadow:0px 0px 1px 0px var(--colorWhite);
             transition:opacity var(--transitionTime);
             animation:showUp var(--transitionTime) linear var(--animationDelay0) 1 forwards;
         }
+        @keyframes showUp{0%[opacity:0]100%[opacity:1]}
         :responsive{
             padding:5px;
             flex-direction:column;
@@ -29,14 +30,5 @@ export default function head(){
     head.appendChild(links(["Advocacia", "Sobre nós"]))
     head.appendChild(logo())
     head.appendChild(links(["Contato", "Conteúdos"]))
-
-    window.addEventListener(
-        "scroll",
-        function a(){
-            let nL = head.children[0]
-            if(window.scrollY > 80){nL.style.opacity = "1"}
-            else{nL.style.opacity = "0"}
-        }
-    )
     return(head)
 }

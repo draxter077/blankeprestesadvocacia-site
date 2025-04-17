@@ -1,5 +1,6 @@
 import info from "./info/main.js"
 import areas from "./areas/main.js"
+import photos from "./photos/main.js"
 
 export default function about(){
     let style = `
@@ -18,5 +19,6 @@ export default function about(){
     about.id = "sobre nós"
     about.appendChild(info())
     about.appendChild(areas())
+    about.appendChild(photos())
     return(about)
 }

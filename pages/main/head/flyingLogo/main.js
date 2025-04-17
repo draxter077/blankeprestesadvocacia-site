@@ -26,7 +26,14 @@ export default function flyingLogo(){
     )
     flyingLogo.addEventListener(
         "mouseout",
-        function a(){flyingLogo.children[1].style.maxWidth = "0px"}
+        function a(){flyingLogo.children[1].style.maxWidth = "0%"}
+    )
+    window.addEventListener(
+        "scroll",
+        function a(){
+            if(window.scrollY > 80){flyingLogo.style.opacity = "1"}
+            else{flyingLogo.style.opacity = "0"}
+        }
     )
     return(flyingLogo)
 }

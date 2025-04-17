@@ -5,7 +5,7 @@ export default function flyingLinks(){
         {
             height:100%;
             width:fit-content;
-            max-width:0px;
+            max-width:0%;
             background:var(--colorBlack);
             overflow:hidden;
             transition:max-width var(--transitionTime);

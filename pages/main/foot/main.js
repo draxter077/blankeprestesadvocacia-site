@@ -4,19 +4,21 @@ export default function foot(){
             display:flex;
             flex-direction:row;
             justify-content:center;
+            align-items:center;
             width:100%;
             font-size:var(--footFontSize);
-            background:var(--colorPHBlue);
-            padding:5px;
+            padding:0px 0px 20px 0px;
             color:white;
         }
         >a{
             font-weight:500;
             color:white;
-            margin:0px 0px 0px 5px;
+            background:var(--colorPHBlue);
+            padding:2px 5px 3px 5px;
+            margin:0px 0px 0px 7px;
         }`
 
     const foot = cE("div", style)
-    foot.innerHTML = `Made by <a target="_blank" href="https://www.ph.net.br">PH</a>`
+    foot.innerHTML = `Made by <a target="_blank" href="https://www.ph.net.br">ph</a>`
     return(foot)
 }

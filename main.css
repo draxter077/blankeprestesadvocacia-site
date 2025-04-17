@@ -25,6 +25,9 @@ time, mark, audio, video, button, input, textarea {
 	-webkit-tap-highlight-color: transparent;
 	box-sizing: border-box;
 }
+span{
+	display:inline-block;
+}
 input:focus, button:focus{
 	outline: none;
 	border: none;
@@ -61,6 +64,7 @@ table {
 	--animationDelay1: 0.5s;
 	--animationDelay2: 1s;
 	--animationDelay3: 1.5s;
+	--animationDelay4: 2s;
 	--innerTitleFontSize: 35px;
 	--innerTextFontSize: 20px;
 	--innerTextResponsiveFontSize: 21px;
@@ -90,8 +94,4 @@ body{
 	background: none;
     padding: 0px;
     margin: 0px;
-}
-@keyframes showUp{
-	0%{opacity:0}
-	100%{opacity:1}
 }

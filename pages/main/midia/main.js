@@ -5,13 +5,12 @@ export default function midia(){
     let style = `
         {
             display:flex;
-            flex-direction:row;
+            flex-direction:column;
             justify-content:space-between;
             width:100%;
             height:100dvh;
         }
         :responsive{
-            flex-direction:column;
             height:fit-content;   
         }`
 

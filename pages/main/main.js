@@ -11,6 +11,7 @@ export default function main(){
             flex-direction:column;
             width:100%;
             background:var(--colorBlack);
+            overflow:hidden;
         }`
 
     const main = cE("div", style)

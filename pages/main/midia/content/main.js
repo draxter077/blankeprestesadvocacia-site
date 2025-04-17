@@ -5,33 +5,33 @@ export default function content(){
         {
             display:flex;
             flex-direction:row;
-            justify-content:space-between;
+            justify-content:flex-start;
             flex-wrap:wrap;
-            width:48%;
-            height:100%;
-            padding:0px;
+            width:100%;
+            margin:50px 0px 0px 0px;
+            height:90%;
+            max-height:100%;
             opacity:0;
             transition:padding var(--transitionTime), opacity var(--transitionTime);
         }
         :responsive{
-            width:100%;
+            height:fit-content;
             padding:10px !important;
+            margin:0px;
         }`
 
     const content = cE("div", style)
     content.id = "conteúdos"
-    let cs = [["./imgs/article.webp", "https://www.researchgate.net/publication/387824335_LOGISTICA_URBANA_SISTEMA_SOCIOTECNICO_DE_GOVERNANCA_MULTINIVEL_PARA_LOGISTICA_URBANA_EM_CURITIBA?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ"],
-        ["./imgs/photo.webp", undefined],
-        ["./imgs/article.webp", "https://www.researchgate.net/publication/387824335_LOGISTICA_URBANA_SISTEMA_SOCIOTECNICO_DE_GOVERNANCA_MULTINIVEL_PARA_LOGISTICA_URBANA_EM_CURITIBA?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ"],
-        ["./imgs/photo.webp", undefined],
-        ["./imgs/article.webp", "https://www.researchgate.net/publication/387824335_LOGISTICA_URBANA_SISTEMA_SOCIOTECNICO_DE_GOVERNANCA_MULTINIVEL_PARA_LOGISTICA_URBANA_EM_CURITIBA?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ"],
-        ["./imgs/photo.webp", undefined],
-        ["./imgs/article.webp", "https://www.researchgate.net/publication/387824335_LOGISTICA_URBANA_SISTEMA_SOCIOTECNICO_DE_GOVERNANCA_MULTINIVEL_PARA_LOGISTICA_URBANA_EM_CURITIBA?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ"],
-        ["./imgs/photo.webp", undefined],
-        ["./imgs/article.webp", "https://www.researchgate.net/publication/387824335_LOGISTICA_URBANA_SISTEMA_SOCIOTECNICO_DE_GOVERNANCA_MULTINIVEL_PARA_LOGISTICA_URBANA_EM_CURITIBA?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ"]
+    let cs = [["", "Estudo dos Direitos Sociais aplicados ao Trabalho", "Sergio Prestes"],
+        ["", "Estudo dos Direitos Sociais aplicados", "Sergio Prestes"],
+        ["", "Estudo dos Direitos do Trabalho", "Sergio Prestes"],
+        ["", "Estudo dos Direitos Sociais", "Sergio Prestes"],
+        ["", "Estudo do Trabalho", "Sergio Prestes"],
+        ["", "Direitos Sociais aplicados ao Trabalho", "Sergio Prestes"],
+        ["", "Trabalho", "Sergio Prestes"]
     ]
     for(let i = 0; i < cs.length; i++){
-        content.appendChild(box(cs[i][0], cs[i][1]))
+        content.appendChild(box(cs[i][0], cs[i][1], cs[i][2]))
     }
 
     window.addEventListener(
