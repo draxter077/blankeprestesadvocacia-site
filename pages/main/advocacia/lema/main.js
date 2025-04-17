@@ -5,9 +5,10 @@ export default function lema(){
             top:20%;
             left:-100%;
             padding:40px;
-            width:100%;
+            width:50%;
+            text-align:justify;
             color:var(--colorWhite);
-            font-size:50px;
+            font-size:var(--innerTitleFontSize);
             font-weight:400;
             text-shadow: 0px 0px 5px var(--colorBlack);
             opacity:0;
@@ -42,9 +43,8 @@ export default function lema(){
         }`
 
     const lema = cE("div", style)
-    lema.innerHTML = `O sentido da vida é construir construção com direção.<br>
-                        A gestão jurídica não é só resolver pendências.<br>
-                        É garantir a coerência e funcionar como um curador da sua demanda:<br>
+    lema.innerHTML = `O sentido da vida é construir. Construção como direção.<br>
+                        A gestão jurídica não é só resolver pendências. É garantir a coerência e funcionar como um curador da sua demanda:<br>
                         <span>Que protege.</span>
                         <span>Que cuida.</span>
                         <span>Que amplia.</span>`
