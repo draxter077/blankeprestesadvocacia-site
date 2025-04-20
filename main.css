@@ -54,7 +54,7 @@ table {
 }
 /* RESET FINISHED */
 :root{
-	--colorWhite: rgb(255, 255, 255);
+	--colorWhite: rgb(225, 225, 225);
 	--colorBlack: rgb(0, 0, 0);
 	--colorBlue: rgb(82, 113, 255);
 	--colorGray: rgb(100, 100, 100);
@@ -70,7 +70,7 @@ table {
 	--textFontSize: 20px;
 	--detailFontSize: 17px;
 	--innerTextResponsiveFontSize: 21px;
-	--footFontSize: 20px;
+	--footFontSize: 25px;
 }
 body{
 	box-sizing: border-box;
