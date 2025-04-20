@@ -1,7 +1,7 @@
 export default function link(n){
     let style = `
         {
-            font-size: 20px;
+            font-size:var(--textFontSize);
             color:var(--colorWhite);
             margin:0px 25px;
             cursor:pointer;
@@ -29,7 +29,7 @@ export default function link(n){
     link.innerHTML = n
     link.addEventListener(
         "click",
-        function a(){document.getElementById(n.toLowerCase()).scrollIntoView({behavior:"smooth"})}
+        function a(){document.getElementById(n.toLowerCase().replace(" ", "")).scrollIntoView({behavior:"smooth"})}
     )
     return(link)
 }

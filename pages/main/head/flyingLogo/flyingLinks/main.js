@@ -12,6 +12,6 @@ export default function flyingLinks(){
         }`
 
     const flyingLinks = cE("div", style)
-    flyingLinks.appendChild(links(["Sobre nós", "Conteúdos"]))
+    flyingLinks.appendChild(links(["Home", "Sobre nós", "Equipe", "Áreas", "Conteúdos", "Contato"]))
     return(flyingLinks)
 }

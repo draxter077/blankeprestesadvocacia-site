@@ -1,7 +1,9 @@
 import head from "./head/main.js"
-import advocacia from "./advocacia/main.js"
-import about from "./about/main.js"
-import content from "./content/main.js"
+import home from "./home/main.js"
+import about_team from "./about_team/main.js"
+import areas from "./areas/main.js"
+import contents from "./contents/main.js"
+import contact from "./contact/main.js"
 import foot from "./foot/main.js"
 
 export default function main(){
@@ -9,6 +11,7 @@ export default function main(){
         {
             display:flex;
             flex-direction:column;
+            align-items:center;
             width:100%;
             background:var(--colorBlack);
             overflow:hidden;
@@ -16,9 +19,11 @@ export default function main(){
 
     const main = cE("div", style)
     main.appendChild(head())
-    main.appendChild(advocacia())
-    main.appendChild(about())
-    main.appendChild(content())
+    main.appendChild(home())
+    main.appendChild(about_team())
+    main.appendChild(areas())
+    main.appendChild(contents())
+    main.appendChild(contact())
     main.appendChild(foot())
     return(main)
 }

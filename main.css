@@ -57,6 +57,7 @@ table {
 	--colorWhite: rgb(255, 255, 255);
 	--colorBlack: rgb(0, 0, 0);
 	--colorBlue: rgb(82, 113, 255);
+	--colorGray: rgb(100, 100, 100);
 	--colorBlackOpacity05: rgb(0, 0, 0, 0.5);
 	--colorPHBlue: rgb(56, 182, 255);
 	--transitionTime: 0.5s;
@@ -65,8 +66,9 @@ table {
 	--animationDelay2: 1s;
 	--animationDelay3: 1.5s;
 	--animationDelay4: 2s;
-	--innerTitleFontSize: 35px;
-	--innerTextFontSize: 20px;
+	--titleFontSize: 35px;
+	--textFontSize: 20px;
+	--detailFontSize: 17px;
 	--innerTextResponsiveFontSize: 21px;
 	--footFontSize: 20px;
 }
@@ -77,20 +79,19 @@ body{
 	cursor: default;
 }
 ::-webkit-scrollbar{
-	display:none;
 	height: 3px;
     width: 3px;
 	background: none;
 }
 ::-webkit-scrollbar-track{
-    background: none;
+    background: var(--colorWhite);
 	margin: 0px;
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 ::-webkit-scrollbar-button{
-    height: 10px;
+    height: 0px;
 	background: none;
     padding: 0px;
     margin: 0px;

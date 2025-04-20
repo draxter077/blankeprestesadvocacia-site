@@ -8,6 +8,6 @@ export default function logo(){
         }`
 
     const logo = cE("img", style)
-    logo.src = "./imgs/logo.jpg"
+    logo.src = "./assets/logo.jpg"
     return(logo)
 }

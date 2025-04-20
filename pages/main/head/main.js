@@ -25,10 +25,10 @@ export default function head(){
         }`
 
     const head = cE("div", style)
-    head.id = "advocacia"
+    head.id = "home"
     head.appendChild(flyingLogo())
-    head.appendChild(links(["Sobre nós"]))
+    head.appendChild(links(["Home", "Sobre nós", "Equipe"]))
     head.appendChild(logo())
-    head.appendChild(links(["Conteúdos"]))
+    head.appendChild(links(["Áreas", "Conteúdos", "Contato"]))
     return(head)
 }

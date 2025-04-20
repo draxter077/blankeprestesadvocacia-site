@@ -7,7 +7,7 @@ export default function foot(){
             align-items:center;
             width:100%;
             font-size:var(--footFontSize);
-            padding:0px 0px 20px 0px;
+            padding:20px;
             color:white;
         }
         >a{
@@ -16,10 +16,10 @@ export default function foot(){
             background:var(--colorPHBlue);
             padding:2px 5px 3px 5px;
             margin:0px 0px 0px 7px;
-            transition:transform var(--transitionTime);
+            transition:box-shadow var(--transitionTime);
         }
         >a:hover{
-            transform:scale(1.1);
+            box-shadow:0px 0px 0px 5px var(--colorPHBlue);
         }`
 
     const foot = cE("div", style)
