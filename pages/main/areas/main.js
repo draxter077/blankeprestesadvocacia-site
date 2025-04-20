@@ -6,10 +6,10 @@ export default function areas(){
         {
             display:flex;
             flex-direction:column;
-            background:var(--colorBlue);
+            background:var(--colorBlue05);
             width:100%;
             padding:20px 40px 40px;
-            box-shadow:0px 0px 5px 30px var(--colorBlue);
+            box-shadow:0px 0px 5px 30px var(--colorBlue05);
             opacity:0;
             transition:opacity var(--transitionTime);
         }

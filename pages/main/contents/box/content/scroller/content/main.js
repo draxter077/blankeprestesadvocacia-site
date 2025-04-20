@@ -5,7 +5,7 @@ export default function content(t){
             aspect-ratio:3;
             color:var(--colorWhite);
             border:1px solid var(--colorBlue);
-            margin:10px;
+            margin:20px 10px;
         }`
 
     const content = cE("div", style)

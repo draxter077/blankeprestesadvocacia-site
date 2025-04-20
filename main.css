@@ -54,9 +54,10 @@ table {
 }
 /* RESET FINISHED */
 :root{
-	--colorWhite: rgb(225, 225, 225);
+	--colorWhite: rgb(230, 230, 230);
 	--colorBlack: rgb(0, 0, 0);
 	--colorBlue: rgb(82, 113, 255);
+	--colorBlue05: rgb(82, 113, 255, 0.5);
 	--colorGray: rgb(100, 100, 100);
 	--colorBlackOpacity05: rgb(0, 0, 0, 0.5);
 	--colorPHBlue: rgb(56, 182, 255);
@@ -79,7 +80,7 @@ body{
 	cursor: default;
 }
 ::-webkit-scrollbar{
-	height: 3px;
+	height: 6px;
     width: 3px;
 	background: none;
 }
