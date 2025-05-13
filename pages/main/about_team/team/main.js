@@ -16,11 +16,11 @@ export default function team(){
     team.id = "equipe"
     let srcs = ["./assets/1.jpg",
             undefined,
-            "./assets/3.jpg",
+            "./assets/3.png",
             undefined,
             "./assets/5.jpg",
             undefined,
-            "./assets/7.jpg",
+            "./assets/7.jpeg",
             undefined,
             "./assets/9.jpg"
         ]
