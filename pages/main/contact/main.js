@@ -8,8 +8,6 @@ export default function contact(){
             display:flex;
             flex-direction:column;
             width:80%;
-            opacity:0;
-            transition:opacity var(--transitionTime);
         }
         :responsive{width:95%}`
 
@@ -18,19 +16,5 @@ export default function contact(){
     contact.appendChild(title())
     contact.appendChild(info())
     contact.appendChild(links())
-    window.addEventListener(
-        "scroll",
-        function a(){
-            let viewportHeight = window.innerHeight
-            let viewportWidth = window.innerWidth
-            let scrollY = window.scrollY
-            if((viewportWidth >= 1080 && scrollY > 2*viewportHeight) || (viewportWidth < 1080 && scrollY > 2.5*viewportHeight)){
-                contact.style.opacity = 1;
-            }
-            else{
-                contact.style.opacity = 0
-            }
-        }
-    )
     return(contact)
 }

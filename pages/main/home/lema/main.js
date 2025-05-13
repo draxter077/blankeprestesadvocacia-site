@@ -35,8 +35,7 @@ export default function lema(){
             bottom:-5%;
             left:0%;
             width:0%;
-            height:100%;
-            z-index:-5;
+            height:2px;
             background:var(--colorBlue);
             animation:widther var(--transitionTime) linear 2s 1 forwards;
         }`
