@@ -23,12 +23,14 @@ export default function areas(){
         "scroll",
         function a(){
             let viewportHeight = window.innerHeight
+            let elementTop = areas.offsetTop
+            let elementBottom = elementTop + areas.offsetHeight
             let scrollY = window.scrollY
-            if(scrollY > 1.25*viewportHeight){
+            if(scrollY > elementTop-viewportHeight/2 && scrollY < elementBottom){
                 areas.style.opacity = 1;
             }
             else{
-                areas.style.opacity = 0
+                areas.style.opacity = 0;
             }
         }
     )

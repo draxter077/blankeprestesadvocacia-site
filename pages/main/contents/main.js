@@ -18,13 +18,14 @@ export default function contents(){
         "scroll",
         function a(){
             let viewportHeight = window.innerHeight
-            let viewportWidth = window.innerWidth
+            let elementTop = contents.offsetTop
+            let elementBottom = elementTop + contents.offsetHeight
             let scrollY = window.scrollY
-            if((viewportWidth >= 1080 && scrollY > 1.75*viewportHeight) || (viewportWidth < 1080 && scrollY > 2.5*viewportHeight)){
+            if(scrollY > elementTop-viewportHeight/2 && scrollY < elementBottom){
                 contents.style.opacity = 1;
             }
             else{
-                contents.style.opacity = 0
+                contents.style.opacity = 0;
             }
         }
     )

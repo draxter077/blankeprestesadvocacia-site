@@ -14,7 +14,6 @@ export default function main(){
             align-items:center;
             width:100%;
             background:var(--colorBlack);
-            overflow:hidden;
         }`
 
     const main = cE("div", style)
