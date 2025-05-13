@@ -15,13 +15,13 @@ export default function team(){
     const team = cE("div", style)
     team.id = "equipe"
     let srcs = ["./assets/1.jpg",
-            "",
-            "",
-            "",
+            undefined,
+            "./assets/3.jpg",
+            undefined,
             "./assets/5.jpg",
-            "",
-            "",
-            "",
+            undefined,
+            "./assets/7.jpg",
+            undefined,
             "./assets/9.jpg"
         ]
     for(let i = 0; i < srcs.length; i++){team.appendChild(photo(srcs[i]))}

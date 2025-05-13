@@ -5,10 +5,10 @@ export default function photo(s){
             aspect-ratio:1;
             box-shadow:0px 0px 1px 0px var(--colorWhite);
             margin:10px 0px;
-            color:white;
+            background:var(--colorBlue);
         }`
 
-    const photo = cE("img", style)
-    photo.src = s
+    const photo = cE(s!=undefined ? "img" : "div", style)
+    if(s!=undefined){photo.src = s}
     return(photo)
 }
