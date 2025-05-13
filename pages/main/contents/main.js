@@ -20,9 +20,11 @@ export default function contents(){
             let viewportHeight = window.innerHeight
             let viewportWidth = window.innerWidth
             let scrollY = window.scrollY
-            if((viewportWidth >= 1080 && scrollY > 1.5*viewportHeight) || (viewportWidth < 1080 && scrollY > 2.5*viewportHeight)){
+            if((viewportWidth >= 1080 && scrollY > 1.75*viewportHeight) || (viewportWidth < 1080 && scrollY > 2.5*viewportHeight)){
                 contents.style.opacity = 1;
-                window.removeEventListener("scroll", a)
+            }
+            else{
+                contents.style.opacity = 0
             }
         }
     )

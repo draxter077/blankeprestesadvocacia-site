@@ -1,7 +1,7 @@
 export default function link(n){
     let style = `
         {
-            font-size:var(--textFontSize);
+            font-size:20px;
             color:var(--colorWhite);
             margin:0px 25px;
             cursor:pointer;
@@ -10,6 +10,7 @@ export default function link(n){
         }
         :responsive{
             margin:0px;
+            font-size:17px;
         }
         ::after{
             content:"";
@@ -18,7 +19,7 @@ export default function link(n){
             left:0%;
             width:0%;
             height:1px;
-            background:var(--colorWhite);
+            background:var(--colorBlue);
             transition:width var(--transitionTime);
         }
         :hover::after{

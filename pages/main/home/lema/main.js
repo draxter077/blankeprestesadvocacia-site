@@ -7,18 +7,18 @@ export default function lema(){
             padding:40px;
             width:100%;
             color:var(--colorWhite);
-            font-size:var(--titleFontSize);
+            font-size:30px;
             font-weight:400;
             text-shadow: 0px 0px 5px var(--colorBlack);
             opacity:0;
-            animation:enterLema var(--transitionTime) ease var(--animationDelay2) 1 forwards;
+            animation:enterLema var(--transitionTime) ease 1s 1 forwards;
         }
         @keyframes enterLema{
-            0%[left:-100%;opacity:0]
-            100%[left:0%;opacity:1]
+            0%[left:-100%;opacity:0;]
+            100%[left:0%;opacity:1;]
         }
         :responsive{
-            font-size:25px;
+            font-size:20px;
             padding:10px;
         }
         @keyframes widther{
@@ -35,9 +35,10 @@ export default function lema(){
             bottom:-5%;
             left:0%;
             width:0%;
-            height:3px;
+            height:100%;
+            z-index:-5;
             background:var(--colorBlue);
-            animation:widther var(--transitionTime) linear var(--animationDelay4) 1 forwards;
+            animation:widther var(--transitionTime) linear 2s 1 forwards;
         }`
 
     const lema = cE("div", style)

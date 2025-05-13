@@ -11,7 +11,7 @@ export default function home(){
             height:calc(100dvh - 95px);
             opacity:0;
             z-index:0;
-            animation:showUp var(--transitionTime) linear var(--animationDelay1) 1 forwards;
+            animation:showUp var(--transitionTime) linear 1s 1 forwards;
             background:black;
         }
         :responsive{

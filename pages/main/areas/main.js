@@ -23,11 +23,12 @@ export default function areas(){
         "scroll",
         function a(){
             let viewportHeight = window.innerHeight
-            let viewportWidth = window.innerWidth
             let scrollY = window.scrollY
-            if((viewportWidth >= 1080 && scrollY > 1*viewportHeight) || (viewportWidth < 1080 && scrollY > 1.25*viewportHeight)){
+            if(scrollY > 1.25*viewportHeight){
                 areas.style.opacity = 1;
-                window.removeEventListener("scroll", a)
+            }
+            else{
+                areas.style.opacity = 0
             }
         }
     )

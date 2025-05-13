@@ -9,7 +9,7 @@ export default function links(ls){
             height:100%;
         }
         :responsive{
-            justify-content:space-between;
+            justify-content:space-around;
             order:2;
             width:100%;
             padding:5px 10px;    

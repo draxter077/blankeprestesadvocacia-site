@@ -1,3 +1,5 @@
+import img from "./img/main.js"
+
 export default function foot(){
     let style = `
         {
@@ -6,23 +8,13 @@ export default function foot(){
             justify-content:center;
             align-items:center;
             width:100%;
-            font-size:var(--footFontSize);
             padding:20px;
-            color:white;
-        }
-        >a{
-            font-weight:500;
-            color:white;
-            background:var(--colorPHBlue);
-            padding:2px 5px 3px 5px;
-            margin:0px 0px 0px 7px;
-            transition:box-shadow var(--transitionTime);
-        }
-        >a:hover{
-            box-shadow:0px 0px 0px 5px var(--colorPHBlue);
+            color:var(--colorWhite);
+            font-size:17px;
         }`
 
     const foot = cE("div", style)
-    foot.innerHTML = `Made by <a target="_blank" href="https://www.ph.net.br">ph</a>`
+    foot.innerHTML += "Desenvolvido por"
+    foot.appendChild(img("./assets/ph.jpg", "https://www.ph.net.br"))
     return(foot)
 }

@@ -13,7 +13,10 @@ export default function about_team(){
             opacity:0;
             transition:opacity var(--transitionTime);
         }
-        :responsive{flex-direction:column; padding:10px;}`
+        :responsive{
+            flex-direction:column;
+            padding:10px;
+        }`
     
     const about_team = cE("div", style)
     about_team.appendChild(about())
@@ -22,11 +25,12 @@ export default function about_team(){
         "scroll",
         function a(){
             let viewportHeight = window.innerHeight
-            let viewportWidth = window.innerWidth
             let scrollY = window.scrollY
-            if((viewportWidth >= 1080 && scrollY > 0.25*viewportHeight) || (viewportWidth < 1080 && scrollY > 0.35*viewportHeight)){
+            if(scrollY > 0.5*viewportHeight){
                 about_team.style.opacity = 1;
-                window.removeEventListener("scroll", a)
+            }
+            else{
+                about_team.style.opacity = 0;
             }
         }
     )

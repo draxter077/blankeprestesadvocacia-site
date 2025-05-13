@@ -5,9 +5,10 @@ export default function logo(){
         }
         :responsive{
             margin:20px 0px;
+            height:70px;
         }`
 
     const logo = cE("img", style)
-    logo.src = "./assets/logo.jpg"
+    logo.src = "./assets/logo.png"
     return(logo)
 }

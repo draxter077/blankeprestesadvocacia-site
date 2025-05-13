@@ -24,9 +24,11 @@ export default function contact(){
             let viewportHeight = window.innerHeight
             let viewportWidth = window.innerWidth
             let scrollY = window.scrollY
-            if((viewportWidth >= 1080 && scrollY > 1.8*viewportHeight) || (viewportWidth < 1080 && scrollY > 2.8*viewportHeight)){
+            if((viewportWidth >= 1080 && scrollY > 2*viewportHeight) || (viewportWidth < 1080 && scrollY > 2.5*viewportHeight)){
                 contact.style.opacity = 1;
-                window.removeEventListener("scroll", a)
+            }
+            else{
+                contact.style.opacity = 0
             }
         }
     )

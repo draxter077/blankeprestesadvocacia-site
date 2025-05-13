@@ -7,11 +7,12 @@ export default function flyingLinks(){
             width:fit-content;
             max-width:0px;
             background:var(--colorBlack);
+            box-shadow:0px 0px 5px 0px var(--colorBlack);
             overflow:hidden;
             transition:max-width var(--transitionTime);
         }`
 
     const flyingLinks = cE("div", style)
-    flyingLinks.appendChild(links(["Home", "Sobre nós", "Equipe", "Áreas", "Conteúdos", "Contato"]))
+    flyingLinks.appendChild(links(["Home", "Sobre nós", "Conteúdos", "Contato"]))
     return(flyingLinks)
 }

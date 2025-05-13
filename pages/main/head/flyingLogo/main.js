@@ -4,12 +4,13 @@ import flyingLinks from "./flyingLinks/main.js"
 export default function flyingLogo(){
     let style = `
         {
+            position:fixed;
+            top:20px;
+            left:20px;
             display:flex;
             flex-direction:row;
             align-items:center;
             height:80px;
-            position:fixed;
-            top:20px;
             opacity:0;
             transition:opacity var(--transitionTime);
         }
@@ -31,7 +32,7 @@ export default function flyingLogo(){
     window.addEventListener(
         "scroll",
         function a(){
-            if(window.scrollY > 80){flyingLogo.style.opacity = "1"}
+            if(window.scrollY > window.innerHeight/2){flyingLogo.style.opacity = "1"}
             else{flyingLogo.style.opacity = "0"}
         }
     )

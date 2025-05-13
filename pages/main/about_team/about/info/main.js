@@ -2,9 +2,12 @@ export default function info(){
     let style = `
         {
             width:100%;
-            font-size:var(--textFontSize);
+            font-size:20px;
             text-align:justify;
             color:var(--colorWhite);
+        }
+        :responsive{
+            font-size:17px;
         }`
     
     const info = cE("div", style)

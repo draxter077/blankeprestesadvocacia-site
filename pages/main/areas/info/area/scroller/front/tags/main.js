@@ -7,13 +7,16 @@ export default function tags(ts){
             justify-content:center;
             flex-wrap:wrap;
             width:100%;
-            font-size:var(--detailFontSize);
+            font-size:15px;
             margin:15px 0px 0px 0px;
         }
         >span{
             height:var(--detailFontSize);
             border:1px solid var(--colorBlue);
             margin:0px 5px;
+        }
+        :responsive{
+            font-size:12px;
         }`
 
     const tags = cE("div", style)

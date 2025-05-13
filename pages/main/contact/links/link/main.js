@@ -1,7 +1,7 @@
 export default function link(d){
     let style = `
         {
-            height:calc(1.5*var(--titleFontSize));
+            height:50px;
             aspect-ratio:1;
             transition:transform var(--transitionTime);
             cursor:pointer;
