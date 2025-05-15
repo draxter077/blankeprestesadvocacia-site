@@ -172,7 +172,6 @@ cE("root", `html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquo
         --colorBlue: rgb(82, 113, 255);
         --colorBlue05: rgb(82, 113, 255, 0.5);
         --colorGray: rgb(100, 100, 100);
-        --colorBlackOpacity05: rgb(0, 0, 0, 0.5);
         --transitionTime: 0.5s;
     }
     body{

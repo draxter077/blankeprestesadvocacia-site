@@ -9,6 +9,6 @@ export default function logo(){
         }`
 
     const logo = cE("img", style)
-    logo.src = "./assets/logo.png"
+    logo.src = "./assets/logo nb.png"
     return(logo)
 }

@@ -15,6 +15,6 @@ export default function title(){
         }`
 
     const title = cE("div", style)
-    title.innerHTML = "Áreas de Atuação"
+    title.innerHTML = "Áreas de atuação"
     return(title)
 }

@@ -10,6 +10,7 @@ export default function info(){
             flex-wrap:wrap;
             width:100%;
             padding:0px 20px;
+            user-select:text;
         }
         :responsive{padding:10px;}`
 
