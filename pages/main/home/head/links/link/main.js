@@ -11,7 +11,7 @@ export default function link(n){
         }
         :responsive{
             margin:0px;
-            font-size:17px;
+            font-size:15px;
         }
         ::after{
             position:absolute;
