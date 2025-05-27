@@ -10,9 +10,16 @@ export default function flyingLinks(){
             background:var(--colorBlack);
             box-shadow:0px 0px 5px 5px var(--colorBlack);
             transition:max-width var(--transitionTime);
+        }
+        :responsive{
+            width:80dvw;
+            max-width:100%;
+            overflow-x:scroll;
         }`
 
     const flyingLinks = cE("div", style)
-    flyingLinks.appendChild(links(["Home", "Sobre nós", "Conteúdos", "Contato"]))
+    let l = links(["Home", "Sobre nós", "Conteúdos", "Contato"])
+    l.style.display = "flex"
+    flyingLinks.appendChild(l)
     return(flyingLinks)
 }

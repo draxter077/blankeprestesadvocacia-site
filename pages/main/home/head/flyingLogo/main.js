@@ -15,7 +15,7 @@ export default function flyingLogo(){
             transition:opacity var(--transitionTime);
         }
         :responsive{
-            display:none;
+            height:40px;
         }`
 
     const flyingLogo = cE("div", style)

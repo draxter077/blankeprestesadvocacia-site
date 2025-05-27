@@ -1,21 +1,30 @@
 export default function link(n){
     let style = `
         {
+            position:relative;
             font-size:20px;
             color:var(--colorWhite);
             margin:0px 25px;
-            padding:5px 10px;
-            border-radius:10px;
+            padding:2px 5px;
             cursor:pointer;
             text-wrap:nowrap;
-            transition:background 0.5s;
         }
         :responsive{
             margin:0px;
             font-size:17px;
         }
-        :hover{
+        ::after{
+            position:absolute;
+            bottom:0%;
+            left:0%;
+            content:"";
+            width:0%;
+            height:2px;
             background:var(--colorBlue);
+            transition:width 0.5s;
+        }
+        :hover::after{
+            width:100%;
         }`
 
     const link = cE("div", style)

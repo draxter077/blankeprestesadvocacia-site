@@ -11,8 +11,9 @@ export default function links(ls){
         :responsive{
             justify-content:space-around;
             order:2;
-            width:100%;
-            padding:5px 10px;    
+            width:50%;
+            padding:5px 10px;
+            display:none;  
         }`
 
     const links = cE("div", style)
