@@ -1,26 +1,23 @@
+import head from "./head/main.js"
 import background from "./background/main.js"
 import lema from "./lema/main.js"
 
 export default function home(){
     let style = `
         {
-            display:flex;
-            flex-direction:row;
-            align-items:center;
+            position:relative;
             width:100%;
-            height:calc(100dvh - 95px);
+            height:100dvh;
             opacity:0;
-            z-index:0;
             animation:showUp var(--transitionTime) linear 1s 1 forwards;
-            background:black;
         }
         :responsive{
-            height:fit-content;
             flex-direction:column;
         }`
 
     const home = cE("div", style)
     home.appendChild(background())
     home.appendChild(lema())
+    home.appendChild(head())
     return(home)
 }

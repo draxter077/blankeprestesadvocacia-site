@@ -1,4 +1,3 @@
-import head from "./head/main.js"
 import home from "./home/main.js"
 import about_team from "./about_team/main.js"
 import areas from "./areas/main.js"
@@ -14,10 +13,10 @@ export default function main(){
             align-items:center;
             width:100%;
             background:var(--colorBlack);
-        }`
+        }
+        @keyframes showUp{0%[opacity:0]100%[opacity:1]}`
 
     const main = cE("div", style)
-    main.appendChild(head())
     main.appendChild(home())
     main.appendChild(about_team())
     main.appendChild(areas())

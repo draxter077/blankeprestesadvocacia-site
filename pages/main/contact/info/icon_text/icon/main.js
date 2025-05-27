@@ -1,7 +1,7 @@
 export default function icon(s){
     let style = `
         {
-            height:40px;
+            height:32px;
             aspect-ratio:1;
             margin:0px 10px 0px 0px;
             padding:5px;

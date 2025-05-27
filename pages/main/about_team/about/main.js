@@ -8,6 +8,8 @@ export default function about(){
             flex-direction:column;
             align-items:flex-end;
             width:30%;
+            opacity:0;
+            transition:opacity 0.5s;
         }
         :responsive{width:100%;margin:0px 0px 20px 0px;}`
 

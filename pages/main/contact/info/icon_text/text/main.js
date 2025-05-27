@@ -1,11 +1,11 @@
 export default function text(t){
     let style = `
         {
-            font-size:20px;
+            font-size:18px;
             color:var(--colorWhite);
         }
         :responsive{
-            font-size:17px;
+            font-size:14px;
         }`
 
     const text = cE("div", style)

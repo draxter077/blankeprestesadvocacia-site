@@ -9,6 +9,8 @@ export default function team(){
             flex-wrap:wrap;
             width:20%;
             margin:0px 0px 0px 40px;
+            opacity:0;
+            transition:opacity 0.5s;
         }
         :responsive{width:100%;margin:0px}`
 

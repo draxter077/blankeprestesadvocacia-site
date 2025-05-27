@@ -5,22 +5,19 @@ import links from "./links/main.js"
 export default function head(){
     let style = `
         {
+            position:absolute;
+            top:0%;
+            left:0%;
             display:flex;
             flex-direction:row;
             justify-content:space-around;
             align-items:center;
-            background:var(--colorBlack);
-            padding:10px 50px;
             width:100%;
             opacity:0;
-            z-index:1;
-            box-shadow:0px 0px 1px 0px var(--colorWhite);
             transition:opacity var(--transitionTime);
             animation:showUp var(--transitionTime) linear 0s 1 forwards;
         }
-        @keyframes showUp{0%[opacity:0]100%[opacity:1]}
         :responsive{
-            padding:5px;
             flex-direction:column;
         }`
 

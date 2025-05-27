@@ -6,9 +6,9 @@ export default function flyingLinks(){
             height:100%;
             width:fit-content;
             max-width:0px;
-            background:var(--colorBlack);
-            box-shadow:0px 0px 5px 0px var(--colorBlack);
             overflow:hidden;
+            background:var(--colorBlack);
+            box-shadow:0px 0px 5px 5px var(--colorBlack);
             transition:max-width var(--transitionTime);
         }`
 

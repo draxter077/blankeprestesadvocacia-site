@@ -9,9 +9,8 @@ export default function about_team(){
             justify-content:center;
             align-items:center;
             width:100%;
-            margin:40px 0px;
-            opacity:0;
-            transition:opacity var(--transitionTime);
+            padding:20px 0px;
+            background:var(--colorBlack);
         }
         :responsive{
             flex-direction:column;
@@ -29,10 +28,12 @@ export default function about_team(){
             let elementBottom = elementTop + about_team.offsetHeight
             let scrollY = window.scrollY
             if(scrollY > elementTop-viewportHeight/2){
-                about_team.style.opacity = 1;
+                about_team.children[0].style.opacity = 1;
+                about_team.children[1].style.opacity = 1;
             }
             else{
-                about_team.style.opacity = 0;
+                about_team.children[0].style.opacity = 0;
+                about_team.children[1].style.opacity = 0;
             }
         }
     )

@@ -3,19 +3,13 @@ export default function lema(){
         {
             position:absolute;        
             bottom:0%;
-            left:-100%;
+            left:0%;
             padding:40px;
             width:100%;
             color:var(--colorWhite);
             font-size:30px;
             font-weight:400;
             text-shadow: 0px 0px 5px var(--colorBlack);
-            opacity:0;
-            animation:enterLema var(--transitionTime) ease 1s 1 forwards;
-        }
-        @keyframes enterLema{
-            0%[left:-100%;opacity:0;]
-            100%[left:0%;opacity:1;]
         }
         :responsive{
             font-size:20px;
@@ -43,6 +37,6 @@ export default function lema(){
     const lema = cE("div", style)
     lema.innerHTML = `O sentido da vida é construir. Construção como direção.<br>
                         A gestão jurídica não é só resolver pendências. É garantir<br>a coerência e funcionar como um curador da sua demanda:<br>
-                        <span>Que protege.</span> <span>Que cuida.</span> <span>Que amplia.</span>`
+                        <span>Que protege. Que cuida. Que amplia.</span>`
     return(lema)
 }

@@ -8,6 +8,7 @@ export default function areas(){
             flex-direction:column;
             background:var(--colorBlue05);
             width:100%;
+            margin:20px 0px 0px 0px;
             padding:20px 40px 40px;
             box-shadow:0px 0px 5px 30px var(--colorBlue05);
             opacity:0;
