@@ -8,7 +8,6 @@ export default function tags(ts){
             flex-wrap:wrap;
             width:100%;
             font-size:15px;
-            margin:15px 0px 0px 0px;
         }
         >span{
             height:var(--detailFontSize);

@@ -7,14 +7,26 @@ export default function video(){
             width:100%;
             height:100%;
             object-fit:cover;
-            opacity:0.4;
-            animation:test 1s linear 0s 1 forwards;
+            opacity:0.5;
+            animation:movingVideo 1s linear 0s 1 forwards;
             animation-timeline:scroll();
+            animation-range-start:0px;
+            animation-range-end:100dvh;
         }
-        @keyframes test{
-            0%[top:0%;opacity:0.4;]
-            40%[top:40%;opacity:0;]
-            100%[top:100%;opacity:0;]
+        @keyframes movingVideo{
+            0%[top:0%;
+                opacity:0.5;
+                transform:scale(1);
+            ]
+            50%[top:35%;
+                opacity:0;
+                transform:scale(0.95);
+            ]
+            100%[
+                top:35%;
+                opacity:0;
+                transform:scale(0.95);
+            ]
         }`
 
     const video = cE("video", style)

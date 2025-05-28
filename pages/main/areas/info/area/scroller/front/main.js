@@ -6,6 +6,7 @@ export default function front(t, tgs){
         {
             display:flex;
             flex-direction:column;
+            justify-content:space-around;
             width:50%;
             height:100%;
             padding:10px;

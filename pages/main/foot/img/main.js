@@ -1,7 +1,7 @@
 export default function img(src, url){
     let style = `
         {
-            height:35px;
+            height:30px;
             margin:10px;
             transition:transform var(--transitionTime);
             cursor:pointer;

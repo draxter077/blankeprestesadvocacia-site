@@ -8,7 +8,6 @@ export default function foot(){
             justify-content:center;
             align-items:center;
             width:100%;
-            padding:20px;
             color:var(--colorWhite);
             font-size:17px;
         }`
