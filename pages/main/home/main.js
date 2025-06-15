@@ -7,7 +7,7 @@ export default function home(){
         {
             position:relative;
             width:100%;
-            height:100dvh;
+            height:100vh;
             opacity:0;
             animation:showUp var(--transitionTime) linear 1s 1 forwards;
         }
@@ -16,8 +16,8 @@ export default function home(){
         }`
 
     const home = cE("div", style)
+    home.appendChild(head())
     home.appendChild(background())
     home.appendChild(lema())
-    home.appendChild(head())
     return(home)
 }

@@ -9,11 +9,8 @@ export default function links(ls){
             height:100%;
         }
         :responsive{
-            justify-content:space-around;
-            order:2;
-            width:50%;
-            padding:5px 10px;
-            display:none;  
+            display:none;
+            justify-content:space-between;
         }`
 
     const links = cE("div", style)

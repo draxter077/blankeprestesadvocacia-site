@@ -6,7 +6,7 @@ export default function contents(){
             display:flex;
             justify-content:center;
             width:100%;
-            margin:0px 0px 40px 0px;
+            margin:10vh 0px;
             opacity:0;
             transition:opacity var(--transitionTime);
         }`

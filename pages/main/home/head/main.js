@@ -14,11 +14,9 @@ export default function head(){
             align-items:center;
             width:100%;
             opacity:0;
+            z-index:1;
             transition:opacity var(--transitionTime);
             animation:showUp var(--transitionTime) linear 0s 1 forwards;
-        }
-        :responsive{
-            flex-direction:column;
         }`
 
     const head = cE("div", style)

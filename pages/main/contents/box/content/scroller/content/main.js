@@ -1,6 +1,9 @@
 export default function content(t, u){
     let style = `
         {
+            display:flex;
+            flex-direction:row;
+            align-items:center;
             width:250px;
             font-size:20px;
             color:var(--colorWhite);

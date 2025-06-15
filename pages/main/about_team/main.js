@@ -9,12 +9,12 @@ export default function about_team(){
             justify-content:center;
             align-items:center;
             width:100%;
-            padding:20px 0px;
+            margin:25dvh 0px;
             background:var(--colorBlack);
         }
         :responsive{
             flex-direction:column;
-            padding:10px;
+            padding:20px;
         }`
     
     const about_team = cE("div", style)

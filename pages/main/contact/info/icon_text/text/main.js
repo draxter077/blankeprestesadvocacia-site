@@ -3,6 +3,7 @@ export default function text(t){
         {
             font-size:18px;
             color:var(--colorWhite);
+            user-select:all;
         }
         :responsive{
             font-size:14px;

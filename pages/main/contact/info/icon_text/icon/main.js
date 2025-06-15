@@ -1,15 +1,12 @@
-export default function icon(s){
+export default function icon(){
     let style = `
         {
-            height:32px;
-            aspect-ratio:1;
-            margin:0px 10px 0px 0px;
-            padding:5px;
-            border-radius:10px;
-            background:var(--colorWhite);
+            font-size:32px;
+            color:var(--colorBlue);
+            margin:0px 10px;
         }`
 
-    const icon = cE("img", style)
-    icon.src = s
+    const icon = cE("div", style)
+    icon.innerHTML = "•"
     return(icon)
 }

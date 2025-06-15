@@ -10,7 +10,7 @@ export default function flyingLogo(){
             display:flex;
             flex-direction:row;
             align-items:center;
-            height:80px;
+            height:50px;
             opacity:0;
             transition:opacity var(--transitionTime);
         }

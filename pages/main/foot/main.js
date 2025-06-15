@@ -10,6 +10,7 @@ export default function foot(){
             width:100%;
             color:var(--colorWhite);
             font-size:17px;
+            margin:10vh 0px 10px 0px;
         }`
 
     const foot = cE("div", style)

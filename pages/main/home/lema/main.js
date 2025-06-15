@@ -10,14 +10,15 @@ export default function lema(){
             font-size:30px;
             font-weight:400;
             text-shadow: 0px 0px 5px var(--colorBlack);
+            animation:disappear 1s linear 0s 1 forwards;
+            animation-timeline:scroll();
+            animation-range-start:0px;
+            animation-range-end:50vh;
         }
         :responsive{
             font-size:20px;
+            bottom:10%;
             padding:10px;
-        }
-        @keyframes widther{
-            0%[width:0%;]
-            100%[width:100%;]
         }
         >span{
             position:relative;
@@ -31,7 +32,15 @@ export default function lema(){
             width:0%;
             height:2px;
             background:var(--colorBlue);
-            animation:widther var(--transitionTime) linear 2s 1 forwards;
+            animation:widther 0.5s linear 2s 1 forwards;
+        }
+        @keyframes disappear{
+            0%[opacity:1;]
+            100%[opacity:0;]
+        }
+        @keyframes widther{
+            0%[width:0%;]
+            100%[width:100%]
         }`
 
     const lema = cE("div", style)
