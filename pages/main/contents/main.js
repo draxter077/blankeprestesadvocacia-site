@@ -21,7 +21,7 @@ export default function contents(){
             let elementTop = contents.offsetTop
             let elementBottom = elementTop + contents.offsetHeight
             let scrollY = window.scrollY
-            if(scrollY > elementTop-viewportHeight/2){
+            if(scrollY + viewportHeight*0.6 > elementTop){
                 contents.style.opacity = 1;
             }
             else{

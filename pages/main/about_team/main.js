@@ -27,7 +27,7 @@ export default function about_team(){
             let elementTop = about_team.offsetTop
             let elementBottom = elementTop + about_team.offsetHeight
             let scrollY = window.scrollY
-            if(scrollY > elementTop-viewportHeight/2){
+            if(scrollY + viewportHeight*0.6 > elementTop){
                 about_team.children[0].style.opacity = 1;
                 about_team.children[1].style.opacity = 1;
             }
