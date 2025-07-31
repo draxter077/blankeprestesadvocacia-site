@@ -10,7 +10,7 @@ export default function links(){
         }`
 
     const links = cE("div", style)
-    let lks = [{icon:"./assets/linkedin.png",href:"https://www.linkedin.com/in/sérgio-p-7bb67013/"},
+    let lks = [{icon:"./assets/linkedin.png",href:"https://www.linkedin.com/in/blanke-prestes-advocacia-28a5ba372/"},
             {icon:"./assets/whatsapp.png",href:"https://wa.me/+55041992045758"},
             {icon:"./assets/googlemaps.png",href:"https://maps.app.goo.gl/NGSH75Ho8Uk3PCtA9"}
     ]
